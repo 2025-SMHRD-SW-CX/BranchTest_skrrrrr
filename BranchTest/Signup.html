@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>회원가입</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>회원가입 화면이지만 회원가입 없지롱</h1>
+    <div class="signup-container">
+        <h2>회원가입</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" required placeholder="이름을 입력하세요">
+            </div>
+            <div class="form-group">
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" required placeholder="이메일을 입력하세요">
+            </div>
+            <div class="form-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" required placeholder="비밀번호를 입력하세요">
+            </div>
+            <button type="submit" id="submit-btn">가입하기</button>
+        </form>
+        <p class="message">이미 계정이 있으신가요? <a href="#">로그인</a></p>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
